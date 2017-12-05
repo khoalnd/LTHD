@@ -1,0 +1,90 @@
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+	width: 800px; 
+	height: 600px;
+	float: left;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#floating-panel {
+	position: absolute;
+	left: 25%;
+	z-index: 5;
+	background-color: #fff;
+	padding: 5px;
+	border: 1px solid #999;
+	text-align: center;
+	font-family: 'Roboto','sans-serif';
+	line-height: 30px;
+	padding-left: 10px;
+}
+.location-list {
+	float: right;
+	width: 450px;
+	height: 100vh;
+	overflow: scroll;
+	/* background: pink;  */
+}
+.form-load {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: palevioletred; */
+}
+.location-item {
+  overflow: hidden;
+  height: 130px;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.location-item > .location-item-image {
+  flex: 4;
+  padding: 5px;
+}
+.location-item > .location-item-image >  img {
+  width: 100%;
+  height: 100%;
+}
+.location-item > .location-info {
+  flex: 6;
+  padding: 5px;
+}
+
+.location-item > .location-info > h3 {
+  text-align: center;
+}
+.location-item > .location-info > p {
+  font-size: 12px;
+}
+
+.map-location-container {
+  width: 150px;
+  height: 150px;
+}
+
+.search-container {
+  width: 300px;
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  left: 30%;
+  right: 0px;
+}
+.current-location {
+  width: 300px;
+  padding: 10px;
+  position: fixed;
+  bottom: 0px;
+  left: 30%;
+  right: 0px;
+}
